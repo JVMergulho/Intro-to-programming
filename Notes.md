@@ -5,7 +5,9 @@
 
 # Aula 7- Listas
 
-Uma lista é uma estrutura de dados que armazena uma coleção ordenada de itens. Seus elementos veem entre '[ ]'.
+### Definição
+
+Uma lista é uma estrutura de dados que armazena uma coleção ordenada de itens. Seus elementos veem entre '[ ]'. Ela pode armazenar elementos de tipos diferentes de forma simultânea
 
 A função ``len`` pode ser usada para calcular o tamanho de uma lista (número de itens)
 
@@ -29,6 +31,8 @@ O método ``append(item)`` é usado para adicionar ``item `` à lista.
 lista_mercado.append('geleia')
 ```
 Agora, a lista passa a ser ['pão','queijo','leite','geleia']
+
+### Indexação/Slicing
 
 Usa-se índices para acessar um elemento específico da lista:
 
@@ -56,6 +60,8 @@ print(lista_mercado[:3])
 ```
 Saída: ['pão','queijo','leite']
 
+### Busca
+
 Começa no índice 0 e vai até o índice anterior ao 3
 
 O método ``index(item,inicio)`` faz uma busca por um elemento na lista e retorna o index de sua primeira ocorrência.  Ele recebe o item a ser procurado e o índex de início da busca (facultativo).
@@ -64,6 +70,8 @@ O método ``index(item,inicio)`` faz uma busca por um elemento na lista e retorn
 index_leite= lista_mercado.index('leite')
 ```
 Saída: 2
+
+### Sorting
 
 O método ``sort`` ordena os elementos - em ordem alfabética no caso de strings e do menor para o maior no caso de números. ``sort(reverse=True)`` ordena de forma inversa. Importante: ela modifica a lista em si!!
 
@@ -82,3 +90,47 @@ print(lista_nova)
 ```
 Saída: ['a','b','c','e','f']
 
+### Inserção/Remoção de elementos
+
+Além de ``append`` pode-se usar ``insert(idx,valor)`` para inserir um elemento. Esse método insere ``valor`` no índex ``idx``
+
+```
+lista_nova.insert(3,'d')
+print(lista_nova)
+```
+Saída: ['a','b','c','d','e','f']
+
+A função ``remove(valor)`` remove a primeira ocorrência de ``valor``
+
+Para remover e retornar ``valor`` como resultado usamos ``pop(valor)``
+
+```
+lista_nova.remove('a')
+print(lista_nova.pop('b'))
+```
+Saída: 'b'
+
+### Fundir listas
+
+Pode-se usar a operação de concatennação para "juntar" os elementos de duas listas.
+
+```
+listaA=[1,2,3]
+listaB=[4,5,6]
+
+listaAB= listaA+listaB
+
+print(listaAB)
+```
+saída: [1,2,3,4,5,6]
+
+### Replace
+
+A função ``replace(arg1,arg2)`` substitui todas as ocorrências do ``arg1`` por ``arg2`` em uma string
+
+```
+texto= '+b+c+te'
+texto= texto.replace('+','a')
+print(texto)
+```
+Saída: 'abacate'
