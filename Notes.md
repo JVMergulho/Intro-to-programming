@@ -129,7 +129,7 @@ saída: [1,2,3,4,5,6]
 A função ``replace(arg1,arg2)`` substitui todas as ocorrências do ``arg1`` por ``arg2`` em uma string
 
 ```
-texto= '+b+c+te'
+texto= 'xbxcxte'
 texto= texto.replace('+','a')
 print(texto)
 ```
