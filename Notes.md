@@ -3,7 +3,7 @@
 
 ---
 
-Aula 7- Listas
+# Aula 7- Listas
 
 Uma lista é uma estrutura de dados que armazena uma coleção ordenada de itens. Seus elementos veem entre '[ ]'.
 
@@ -23,18 +23,18 @@ for item in lista_mercado:
 ```
 
 Também é uma estrutura _**mutável**_. Podemos inserir e remover itens, de modo a mudar o tamanho da lista.
-O método ``append`` é usado para adicionar um elemento à lista.
+O método ``append(item)`` é usado para adicionar ``item `` à lista.
 
 ```
 lista_mercado.append('geleia')
 ```
-Agora, a lista passa a ser ['pão','quejo','leite','geleia']
+Agora, a lista passa a ser ['pão','queijo','leite','geleia']
 
 Usa-se índices para acessar um elemento específico da lista:
 
 ```
                   0      1       2       3
-lista_mercado= ['pão','quejo','leite','geleia']
+lista_mercado= ['pão','queijo','leite','geleia']
                  -4     -3      -2      -1
   
 print(lista_mercado[0]) #saída: 'pão'
@@ -46,7 +46,7 @@ Com o ``slicing`` nós acessamos um intervalo do conteúdo da lista
 ```
 print(lista_mercado[1:3])
 ```
-Saída: ['quejo','leite']
+Saída: ['queijo','leite']
 
 Começa no índice 1 e vai até o índice anterior ao 3
 
@@ -54,8 +54,31 @@ Começa no índice 1 e vai até o índice anterior ao 3
 ```
 print(lista_mercado[:3])
 ```
-Saída: ['pão','quejo','leite']
+Saída: ['pão','queijo','leite']
 
 Começa no índice 0 e vai até o índice anterior ao 3
 
+O método ``index(item,inicio)`` faz uma busca por um elemento na lista e retorna o index de sua primeira ocorrência.  Ele recebe o item a ser procurado e o índex de início da busca (facultativo).
+
+```
+index_leite= lista_mercado.index('leite')
+```
+Saída: 2
+
+O método ``sort`` ordena os elementos - em ordem alfabética no caso de strings e do menor para o maior no caso de números. ``sort(reverse=True)`` ordena de forma inversa. Importante: ela modifica a lista em si!!
+
+```
+lista_abc=['a','c','b','f','e']
+lista_abc.sort()
+print(lista)
+```
+Saída: ['a','b','c','e','f']
+
+Já a função ``sorted`` cria uma nova lista ordenada e não modifica a original.
+
+```
+lista_nova= sorted(lista_abc)
+print(lista_nova)
+```
+Saída: ['a','b','c','e','f']
 
