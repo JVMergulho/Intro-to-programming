@@ -22,7 +22,7 @@ for item in lista_mercado:
   print(f'você precisa comprar {item}')
 ```
 
-Também é uma estrutura _**mutável**_. Podemos inserir e remover ítens, de modo a mudar o tamanho da lista.
+Também é uma estrutura _**mutável**_. Podemos inserir e remover itens, de modo a mudar o tamanho da lista.
 O método ``append`` é usado para adicionar um elemento à lista.
 
 ```
