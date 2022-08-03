@@ -1,5 +1,5 @@
 
-![imagem1](https://user-images.githubusercontent.com/50535434/182708414-ba308f44-5524-420f-af04-0c6b50faab09.gif)
+<img src= "https://user-images.githubusercontent.com/50535434/182708414-ba308f44-5524-420f-af04-0c6b50faab09.gif" width="350" height="350"> 
 
 ---
 
